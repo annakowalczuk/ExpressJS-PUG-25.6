@@ -1,0 +1,12 @@
+html
+    head
+        title Logowanie
+    body
+        form(action='/userform', method='POST')
+            p
+                | Login: 
+                input(type='text', name='username')
+            p
+                | Password: 
+                input(type='text', name='password')
+            input(type='submit', value='Submit')
