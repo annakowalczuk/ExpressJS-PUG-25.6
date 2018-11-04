@@ -25,8 +25,9 @@ app.post('/userform', function (req, res) {
   res.sendFile(resolvedPath);
 });
 
-app.listen(3000);
-
+app.listen(3000, function() {
+  console.log('Aplikacja nasłuchuje na http://localhost:3000');
+});
 app.use(function (req, res, next) {
     res.status(404).send('Wybacz, nie mogliśmy odnaleźć tego, czego żądasz!')
 });
